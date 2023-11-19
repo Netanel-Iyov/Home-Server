@@ -1,0 +1,18 @@
+version: '3.8'
+services:
+  nginx:
+    image: nginx:1.25
+    container_name: reverse_proxy_nginx
+    networks:
+      - docker_network
+    hostname: reverse_proxy_nginx
+    volumes:
+      - /work/niyov/repos/Home-Server/nginx:/etc/nginx
+    ports:
+      - 80:80
+      - 443:443
+
+networks:
+  docker_network:
+    external: true
+
