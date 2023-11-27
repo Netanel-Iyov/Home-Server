@@ -8,6 +8,7 @@ services:
     hostname: reverse_proxy_nginx
     volumes:
       - /work/niyov/repos/Home-Server/nginx:/etc/nginx
+      - /etc/nginx/ssl/harbor:/etc/ssl/harbor
     ports:
       - 80:80
       - 443:443
@@ -15,4 +16,3 @@ services:
 networks:
   docker_network:
     external: true
-
