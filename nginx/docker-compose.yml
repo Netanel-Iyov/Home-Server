@@ -9,6 +9,7 @@ services:
     volumes:
       - /work/niyov/repos/Home-Server/nginx:/etc/nginx
       - /etc/nginx/ssl/harbor:/etc/ssl/harbor
+      - /etc/nginx/ssl/Tammys-Nails:/etc/ssl/Tammys-Nails
     ports:
       - 80:80
       - 443:443
