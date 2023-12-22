@@ -59,6 +59,7 @@ def update_dns_record(domain, record_names):
     # Set new IP Address
     data['data'] = new_ip
     for record_name in record_names:
+        data['name'] = record_name
         url = f'https://api.godaddy.com/v1/domains/{domain}/records/{record_type}/{record_name}'
         response = requests.put(url, json=[data], headers=headers)
 
