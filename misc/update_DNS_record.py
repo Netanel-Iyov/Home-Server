@@ -7,6 +7,8 @@ import argparse
 def parse_args():
     parser = argparse.ArgumentParser(
         description='Update DNS records in GoDaddy.')
+    parser.add_argument('--api-key', required=True, help='Go Daddy API Key')
+    parser.add_argument('--api-secret', required=True, help='Go Daddy API Secret')
     parser.add_argument('--domain', required=True, help='Domain name')
     parser.add_argument('--record-names', nargs='+',
                         required=True, help='List of record names')
@@ -15,15 +17,11 @@ def parse_args():
     return args
 
 
-def update_dns_record(domain, record_names):
+def update_dns_record(domain, record_names, api_key, api_secret):
     # Get my Public IP address #
     url = 'http://ipinfo.io'
     response = requests.get(url)
     new_ip = response.json()['ip']
-
-    # GoDaddy API key and secret
-    api_key = os.environ['api_key']
-    api_secret = os.environ['api_secret']
 
     record_type = 'A'
 
@@ -75,4 +73,4 @@ def update_dns_record(domain, record_names):
 
 if __name__ == "__main__":
     args = parse_args()
-    update_dns_record(args.domain, args.record_names)
+    update_dns_record(args.domain, args.record_names, args.api_key, args.api_secret)
