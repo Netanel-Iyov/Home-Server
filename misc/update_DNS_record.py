@@ -27,7 +27,7 @@ def update_dns_record(domain, record_names, api_key, api_secret):
 
     for record_name in record_names:
         # Authenticate with GoDaddy API
-        url = f'https://api.godaddy.com/v1/domains/{domain}/records/{record_type}/{record_name}'
+        url = f'https://api.ote-godaddy.com/v1/domains/{domain}/records/{record_type}/{record_name}'
         headers = {
             'Authorization': f'sso-key {api_key}:{api_secret}',
             'Content-Type': 'application/json'
