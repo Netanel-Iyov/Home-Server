@@ -60,7 +60,7 @@ def update_dns_record(domain, record_names, api_key, api_secret):
         data['data'] = new_ip
 
         data['name'] = record_name
-        url = f'https://api.godaddy.com/v1/domains/{domain}/records/{record_type}/{record_name}'
+        url = f'https://api.ote-godaddy.com/v1/domains/{domain}/records/{record_type}/{record_name}'
         response = requests.put(url, json=[data], headers=headers)
 
         # Check if the update was successful
