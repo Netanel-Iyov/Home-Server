@@ -1,4 +1,0 @@
-FROM docker:dind
-
-RUN apk update && apk add bash && apk add git
-RUN git config --global pull.rebase false && git config --global user.email "nati16368447@gmail.com" && git config --global user.name "Netanel Iyov"
