@@ -1,0 +1,23 @@
+---
+email: nati16368447@gmail.com
+
+dns_records:
+  - hostname: jenkins.niyov.com
+    zone_name: niyov.com
+    record_type: A
+
+  - hostname: argocd.niyov.com
+    zone_name: niyov.com
+    record_type: A
+
+  - hostname: todo-list.niyov.com 
+    zone_name: niyov.com
+    record_type: A
+
+  - hostname: api-todo-list.niyov.com
+    zone_name: niyov.com
+    record_type: A
+
+  - hostname: prometheus.niyov.com
+    zone_name: niyov.com
+    record_type: A
