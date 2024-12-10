@@ -21,3 +21,7 @@ dns_records:
   - hostname: prometheus.niyov.com
     zone_name: niyov.com
     record_type: A
+
+  - hostname: harbor.niyov.com
+    zone_name: niyov.com
+    record_type: A
