@@ -25,3 +25,8 @@ dns_records:
   - hostname: harbor.niyov.com
     zone_name: niyov.com
     record_type: A
+
+  - hostname: grafana.niyov.com
+    zone_name: niyov.com
+    record_type: A
+
