@@ -30,3 +30,10 @@ dns_records:
     zone_name: niyov.com
     record_type: A
 
+  - hostname: todo-list-staging.niyov.com
+    zone_name: niyov.com
+    record_type: A
+
+  - hostname: api-todo-list-staging.niyov.com
+    zone_name: niyov.com
+    record_type: A
