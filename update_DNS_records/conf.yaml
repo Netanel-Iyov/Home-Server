@@ -45,3 +45,7 @@ dns_records:
   - hostname: api-todo-list-testing.niyov.com
     zone_name: niyov.com
     record_type: A
+
+  - hostname: vault.niyov.com
+    zone_name: niyov.com
+    record_type: A
