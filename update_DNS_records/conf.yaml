@@ -10,14 +10,6 @@ dns_records:
     zone_name: niyov.com
     record_type: A
 
-  - hostname: todo-list.niyov.com 
-    zone_name: niyov.com
-    record_type: A
-
-  - hostname: api-todo-list.niyov.com
-    zone_name: niyov.com
-    record_type: A
-
   - hostname: prometheus.niyov.com
     zone_name: niyov.com
     record_type: A
@@ -30,22 +22,6 @@ dns_records:
     zone_name: niyov.com
     record_type: A
 
-  - hostname: todo-list-staging.niyov.com
-    zone_name: niyov.com
-    record_type: A
-
-  - hostname: api-todo-list-staging.niyov.com
-    zone_name: niyov.com
-    record_type: A
-
-  - hostname: todo-list-testing.niyov.com
-    zone_name: niyov.com
-    record_type: A
-
-  - hostname: api-todo-list-testing.niyov.com
-    zone_name: niyov.com
-    record_type: A
-
-  - hostname: vault.niyov.com
+  - hostname: homepage.niyov.com
     zone_name: niyov.com
     record_type: A
