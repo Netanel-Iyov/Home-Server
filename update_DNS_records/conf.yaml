@@ -25,3 +25,11 @@ dns_records:
   - hostname: homepage.niyov.com
     zone_name: niyov.com
     record_type: A
+
+  - hostname: winning-horse-staging.niyov.com
+    zone_name: niyov.com
+    record_type: A
+
+  - hostname: winning-horse.niyov.com
+    zone_name: niyov.com
+    record_type: A
